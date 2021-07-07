@@ -1,46 +1,40 @@
+# Write your query or mutation here
 # query{
 #   hello
-# }
-
-# query{
-#   wish(name:"Hisham" place:"Varikkal")
-# }
-
-# query{
-#   hello
-#   wish(name:"Hisham" place:"Varikkal")
-# }
-# query{
-#   getUser{
-#     name
-#     age
-#   }
-# }
-
-# query{
-#   getUsers{
-#     age
-#     name
-#   }
-# }
-
-# query{
-#   getPosts{
-#     title
-#   }
 # }
 
 # mutation{
-#   setMsg(newMsg:"this is testing")
+#   createPost(post:{
+#     title:"sec"
+#     description:"my sec post"
+#   }){
+#    id
+#     description
+#   }
 # }
-mutation{
-  setUser(user:{
-    name:"minnu",
-    age:20,
-    colloge:"mes"
-  }) {
-    name
-  
-    colloge
-  }
-}
+# query{
+#   getPostById(id:"60e53ebc90d6d06f37479d08"){
+#     description
+#   }
+# }
+# mutation{
+#   postDeleteById(id:"60e53ebc90d6d06f37479d08")
+# }
+# query{
+#   getAllPosts{
+#     id
+#     title
+#     description
+#   }
+# }
+# mutation{
+#   postUpdate(id:"60e53f0390d6d06f37479d0a",post:{
+#     title:"ffff"
+#     description:"mmmm"
+     
+    
+#   }){
+#     title
+#     description
+#   }
+# }
