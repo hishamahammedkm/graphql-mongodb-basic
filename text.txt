@@ -1,0 +1,46 @@
+# query{
+#   hello
+# }
+
+# query{
+#   wish(name:"Hisham" place:"Varikkal")
+# }
+
+# query{
+#   hello
+#   wish(name:"Hisham" place:"Varikkal")
+# }
+# query{
+#   getUser{
+#     name
+#     age
+#   }
+# }
+
+# query{
+#   getUsers{
+#     age
+#     name
+#   }
+# }
+
+# query{
+#   getPosts{
+#     title
+#   }
+# }
+
+# mutation{
+#   setMsg(newMsg:"this is testing")
+# }
+mutation{
+  setUser(user:{
+    name:"minnu",
+    age:20,
+    colloge:"mes"
+  }) {
+    name
+  
+    colloge
+  }
+}
